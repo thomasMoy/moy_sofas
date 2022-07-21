@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Moy Sofas</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/custom_styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+    
+    </head>
+    <body>
+        <!--nav section-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div id="inner-nav" class="container-fluid">
+              <a class="navbar-brand" href="#">Moy Sofa's</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="add_products.html">Add Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="update_products.html">Update Products</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!--nav section-->
+        <!--body section-->
+        <form method="POST" action="php/update_product.php">
+            <div class="form-group">
+                <label for="product-id">Product ID</label>
+                <input type="text" class="form-control" name="product-id" aria-describedby="productid" placeholder="Enter Product Title">
+              </div>
+            <div class="form-group">
+              <label for="product-title">New Product Title</label>
+              <input type="text" class="form-control" name="product-title" aria-describedby="productTitle" placeholder="Enter Product Title">
+            </div>
+            <div class="form-group">
+                <label for="product-type">New Product Type</label>
+                <input type="text" class="form-control" name="product-type" aria-describedby="productType" placeholder="Enter Product Type">
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        
+      
+
+
+        
+        <!--inner body-->
+        <!--body section-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>        
+        <script src="js/custom_js.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/5dd4ce85ea.js" crossorigin="anonymous"></script>
+        <!--<script src="js/custom_scripts.js/"></script>-->
+    </body>
+</html>
